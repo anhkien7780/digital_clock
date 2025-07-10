@@ -1,3 +1,4 @@
+import 'package:digital_clock/ui/widgets/digital_clock.dart';
 import 'package:digital_clock/ui/widgets/digital_clock_digit.dart';
 import 'package:flutter/material.dart';
 
@@ -31,24 +32,7 @@ class DrawScreen extends StatelessWidget {
     return Center(
       child: Container(
         color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          spacing: 12,
-          children: [
-            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
-            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              spacing: 8,
-              children: [
-                Container(width: 10, height: 10, color: Color(0xff171717)),
-                Container(width: 10, height: 10, color: Color(0xff171717)),
-              ],
-            ),
-            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
-            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
-          ],
-        ),
+        child: DigitalClock(),
       ),
     );
   }
