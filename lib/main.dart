@@ -1,4 +1,4 @@
-import 'package:digital_clock/ui/widgets/digital_number_component.dart';
+import 'package:digital_clock/ui/widgets/digital_clock_digit.dart';
 import 'package:flutter/material.dart';
 
 import 'model/digital_number.dart';
@@ -35,8 +35,8 @@ class DrawScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           spacing: 12,
           children: [
-            DigitalNumberComponent(digitalNumber: DigitalNumber.zero),
-            DigitalNumberComponent(digitalNumber: DigitalNumber.zero),
+            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
+            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               spacing: 8,
@@ -45,8 +45,8 @@ class DrawScreen extends StatelessWidget {
                 Container(width: 10, height: 10, color: Color(0xff171717)),
               ],
             ),
-            DigitalNumberComponent(digitalNumber: DigitalNumber.zero),
-            DigitalNumberComponent(digitalNumber: DigitalNumber.zero),
+            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
+            DigitalClockDigit(digitalNumber: DigitalNumber.zero),
           ],
         ),
       ),
