@@ -1,8 +1,5 @@
 import 'package:digital_clock/ui/widgets/digital_clock.dart';
-import 'package:digital_clock/ui/widgets/digital_clock_digit.dart';
 import 'package:flutter/material.dart';
-
-import 'model/digital_number.dart';
 
 void main() {
   runApp(const MyApp());
