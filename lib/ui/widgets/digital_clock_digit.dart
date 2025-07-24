@@ -112,7 +112,7 @@ class DigitalClockDigit extends StatelessWidget {
           middle: true,
         );
         break;
-      case DigitalNumber.night: // giả sử đây là "nine"
+      case DigitalNumber.nine:
         digitalClockDigit = _digitClockDigit(
           top: true,
           topLeft: true,

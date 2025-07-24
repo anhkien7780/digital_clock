@@ -8,5 +8,5 @@ enum DigitalNumber {
   six,
   seven,
   eight,
-  night,
+  nine,
 }
